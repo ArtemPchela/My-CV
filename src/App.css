@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-color {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5WhzhyqaH2bDfP0LkEenW5UjCiNDsz6rPJ-BesHY21eJjxSt6');
+    background-size: 100%;
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+    color: gold;
+    transition: all .7s linear;
+}
+
+.landing-grid {
+    background-size: cover;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 2vw;
+}
+
+/* Resume Page css */
+.resume-right-col {
+    background: #27221F;
+    color: white;
+    padding: 2em;
+}
+
+/* contact page css */
+
+.contact-body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.contact-grid {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    background: white;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.contact-grid h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+.contact-grid hr {
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-list i {
+    font-size: 30px;
+    padding-right: 2rem;
+}
+
+.contact-list a {
+    color: rgba(0,0,0, 0.87);
+}
+
+.avatar-img {
+    height: 250px;
+    padding-top: 2em;
+}
+
+.banner-text {
+    opacity: .8;
+    width: 70%;
+    margin: auto;
+}
+
+.banner-text h2 {
+    font-size: 66px;
+    font-weight: bold;
+    color: black;
+    padding-top: 3em;
+    line-height: 70px;
+}
+
+.banner-text p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0.3em;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.social-links i {
+    border-radius: 100px;
+    color: black;
+    font-size: 3em;
+    padding: 8px;
+}
+
+.social-links i:hover {
+    box-shadow: 0 0 12px 11px gold;
+    transition: all .7s linear;
+}
+
+/*Title_Icon*/
+.material-icons {
+    color: white;
+}
+
+.material-icons:hover {
+    color: gold;
+    transition: all .7s linear;
+}
+
+@media screen and (max-width: 1024px) {
+    .material-icons {
+        margin: 4px;
+        color: gold;
+    }
+}
+
+
+/*About Me*/
+
+.about-text p {
+    color: black;
+    font-size: 20px;
+    padding: 0.3em;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+.about-text ul {
+    list-style-type: none;
+    margin: 0;
+    color: black;
+    font-size: 16px;
+    padding-left: 1em;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+.hrefColor:hover {
+    color: gold;
+    transition: all .7s linear;
+}
+
+
+.mdl-layout__drawer {
+    width: 150px;
+    height: 150px;
+}
+
+/*images carousel*/
+.carousel {
+    margin-top: 3em;
+}
+
+.d-block {
+    height: 400px;
+}
+
+/*Download button*/
+
+.button {
+    margin-top: 1em;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+}
+
+.button:hover {
+    box-shadow: 0 0 12px 11px gold;
+    transition: all .7s linear;
+    /*background-color: gold;*/
+}
+
+.button:active {
+    outline: none;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+.fa {
+    padding-right: 5px;
+}
