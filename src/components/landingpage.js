@@ -3,7 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 //import { Pic } from "pic";
 //import img from './me.jpg';
 //const face = require('./images/me.jpg');
-import PDF from "../CV/CV.pdf";
+import PDF from "../CV/CV_Artem Pchelenkov.pdf";
 
 
 
