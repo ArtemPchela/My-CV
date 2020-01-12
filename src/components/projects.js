@@ -4,7 +4,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, CardMenu
 import JS1 from './images/jsProjects/js1.jpg';
 import JS2 from './images/jsProjects/js2.jpg';
 import React1 from './images/ReactProjects/react1.png';
-import JQ1 from './images/jQueryProjects/jQ1.png';
+// import JQ1 from './images/jQueryProjects/jQ1.png';
 
 class Projects extends Component {
       constructor(props) {
