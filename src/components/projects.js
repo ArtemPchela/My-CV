@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, CardMenu, Button, IconButton  } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, CardMenu, Button } from 'react-mdl';
 /*imports Images*/
 import JS1 from './images/jsProjects/js1.jpg';
+import JS2 from './images/jsProjects/js2.jpg';
 import React1 from './images/ReactProjects/react1.png';
 import JQ1 from './images/jQueryProjects/jQ1.png';
 
@@ -17,7 +18,7 @@ class Projects extends Component {
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab>JavaScript</Tab>
                     <Tab>React</Tab>
-                    <Tab>jQuery</Tab>
+                    {/*<Tab>jQuery</Tab>*/}
                     <Tab>HTML/CSS</Tab>
                 </Tabs>
                 <section>
@@ -47,15 +48,30 @@ class Projects extends Component {
                         }}>
                         </CardTitle>
                         <CardText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            Button for toggle random colors with used JS function, style CSS and HTML
                         </CardText>
                         <CardActions border>
-                            <Button colored><a href={"https://github.com"} target={"_blank"}>GitHub</a></Button>
-                            <Button colored><a href={"https://codepen.io/"}>CodePen</a></Button>
+                            <Button colored><a href={"https://github.com/ArtemPchela/Button-change-color/blob/master/index.html"} target={"_blank"}>GitHub</a></Button>
+                            <Button colored><a href={"https://codepen.io/Pchela/pen/NWPMmjr"} target={"_blank"}>CodePen</a></Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
-                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{
+                            color: 'black',
+                            height: '176px',
+                            backgroundImage: `url(${JS2})`
+                        }}>
+                        </CardTitle>
+                        <CardText>
+                            It's a simple generator random HEX colors with HTML/CSS and JS
+                        </CardText>
+                        <CardActions border>
+                            <Button colored><a href={"https://github.com/ArtemPchela/Generator-HEX-colors"} target={"_blank"}>GitHub</a></Button>
+                            <Button colored><a href={"https://codepen.io/Pchela/pen/xxbjeMM"} target={"_blank"}>CodePen</a></Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
                         </CardMenu>
                     </Card>
                 </div>
@@ -85,31 +101,31 @@ class Projects extends Component {
             )
 
             /*jQuery*/
+        // } else if (this.state.activeTab === 2) {
+        //     return (
+        //         <div className="projects-grid">
+        //             <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+        //                 <CardTitle style={{
+        //                     color: 'black',
+        //                     height: '176px',
+        //                     backgroundImage: `url(${JQ1})`
+        //                 }}>
+        //                 </CardTitle>
+        //                 <CardText>
+        //                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        //                     Mauris sagittis pellentesque lacus eleifend lacinia...
+        //                 </CardText>
+        //                 <CardActions border>
+        //                     <Button colored><a href={"https://github.com"} target={"_blank"}>GitHub</a></Button>
+        //                     <Button colored><a href={"https://codepen.io/"}>CodePen</a></Button>
+        //                 </CardActions>
+        //                 <CardMenu style={{color: '#fff'}}>
+        //                 </CardMenu>
+        //             </Card>
+        //         </div>
+        //     )
+            /*HTML and CSS*/
         } else if (this.state.activeTab === 2) {
-            return (
-                <div className="projects-grid">
-                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{
-                            color: 'black',
-                            height: '176px',
-                            backgroundImage: `url(${JQ1})`
-                        }}>
-                        </CardTitle>
-                        <CardText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                        <CardActions border>
-                            <Button colored><a href={"https://github.com"} target={"_blank"}>GitHub</a></Button>
-                            <Button colored><a href={"https://codepen.io/"}>CodePen</a></Button>
-                        </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
-                        </CardMenu>
-                    </Card>
-                </div>
-            )
-
-        } else if (this.state.activeTab === 3) {
             return (
                 <div className="projects-grid">
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
