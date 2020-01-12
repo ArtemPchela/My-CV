@@ -4,6 +4,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, CardMenu
 import JS1 from './images/jsProjects/js1.jpg';
 import JS2 from './images/jsProjects/js2.jpg';
 import React1 from './images/ReactProjects/react1.png';
+import React2 from './images/ReactProjects/react2.png';
 // import JQ1 from './images/jQueryProjects/jQ1.png';
 
 class Projects extends Component {
@@ -88,11 +89,27 @@ class Projects extends Component {
                         }}>
                         </CardTitle>
                         <CardText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                            Create a todo List with React, CSS, fetch from <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> and modal window.
                         </CardText>
                         <CardActions border>
                             <Button colored><a href={"https://github.com/ArtemPchela/React_ToDo"} target={"_blank"}>GitHub</a></Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                        </CardMenu>
+                    </Card>
+
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{
+                            color: 'black',
+                            height: '176px',
+                            backgroundImage: `url(${React2})`
+                        }}>
+                        </CardTitle>
+                        <CardText>
+                            Create a CV "About-me" with React Tab components, bootstrap, CSS, routing, fetch and modal window.
+                        </CardText>
+                        <CardActions border>
+                            <Button colored><a href={"https://github.com/ArtemPchela/My-CV"} target={"_blank"}>GitHub</a></Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                         </CardMenu>
