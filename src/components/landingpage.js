@@ -15,7 +15,7 @@ class Landingpage extends Component {
                     <Cell col={12}>
                         <div className="banner-text">
                             <h2>{"Junior Front - end Developer"}</h2>
-                            <p>{"HTML | CSS | JavaScript | React | Bootstrap | jQuery | npm | Git | GitHub"}</p>
+                            <p>{"HTML | CSS | JavaScript | React | Bootstrap | jQuery | npm | Git | GitHub | Docker"}</p>
                             {<div className="social-links">
 
                                 {/*Linkedin*/}
