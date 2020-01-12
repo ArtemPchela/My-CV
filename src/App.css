@@ -139,18 +139,19 @@ a {
 .material-icons:hover {
     color: gold;
     transition: all .7s linear;
+    outline: none;
 }
 
 @media screen and (max-width: 1024px) {
     .material-icons {
         margin: 4px;
         color: gold;
+        outline: none;
     }
 }
 
 
 /*About Me*/
-
 .about-text p {
     color: black;
     font-size: 20px;
@@ -167,6 +168,18 @@ a {
     padding-left: 1em;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
+}
+
+#certificate {
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#certificate:hover {
+    background-color: black;
+    color: gold;
+    transition: all .7s linear;
 }
 
 .hrefColor:hover {
