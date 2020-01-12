@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Slides from  './carousel';
+import Modal from './modalCertificate/modal';
 
 
 class Aboutme extends Component {
@@ -10,13 +11,22 @@ class Aboutme extends Component {
                 <Grid>
                     <Cell col={7} className='about-text'>
                         <h1>About me</h1>
-                        <p>I’m hardworking and self-motivated with a responsible attitude
+                        <p>
+                            I’m hardworking and self-motivated with a responsible attitude
                             towards work. I’m a quick learner and easily trained because I
                             have a great deal of self-motivation when it comes to achieving
                             both the goals my company sets and the ones I set myself. I enjoy
                             working in a team and under pressure and I love analysing
                             problems and finding solutions.
                         </p>
+
+                        <p style={{fontWeight: '900'}}>
+                            I graduated from a ten-month development course "Front-end development".
+                            <br/>
+                        </p>
+
+                        <Modal />
+
                         <p>
                             Currently, my priority is to begin my career as a Front-End
                             Developer so that I can use the skills I have obtained in a
@@ -27,6 +37,7 @@ class Aboutme extends Component {
                             and participate in the production of quality and competitive
                             products.
                         </p>
+
                         <p>
                             I really like activities. Three days a week I go to the gym.
                             I like to run and ride a bike.
