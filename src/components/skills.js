@@ -18,7 +18,7 @@ class Skills extends Component {
                         <h5>FRAMEWORKS / LIBRARIES</h5>
                         <p>Bootstrap, React, JSON, Node.js, npm</p>
                         <h5>PRODUCTS / METHODOLOGIES</h5>
-                        <p>Git </p>
+                        <p>Git, GitHub, Docker</p>
                     </div>
                 </Cell>
             </Grid>
