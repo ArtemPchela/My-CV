@@ -4,13 +4,37 @@ import './App.css';
 import Main from "./components/main"
 import { Link } from "react-router-dom";
 
+const stylesLinkLeft = {
+    position: 'relative',
+    fontSize: '0.93rem',
+    letterSpacing: '0.02em',
+    textTransform: 'uppercase',
+    fontWeight: '700',
+    textDecoration: 'none',
+    color: 'black',
+    boxSizing: 'border-box',
+};
+
+// const styleMenu = {
+//     fontWeight: '700',
+//     width: "150px",
+//     height: "70%",
+//     borderRight: "none",
+// };
+
+const headerStyle = {
+    position: 'relative',
+    color: 'white',
+    letterSpacing: '0.02em',
+    textDecoration: 'none',
+};
 
 class App extends Component {
     render() {
         return(
             <div className="demo-big-content">
                 <Layout>
-                    <Header className="header-color" title="Artem Pchelenkov" scroll>
+                    <Header style={headerStyle} title="Artem Pchelenkov" scroll>
                         <Navigation>
                             <Link to="/">Home</Link>
                             <Link to="/resume">Resume</Link>
@@ -19,13 +43,13 @@ class App extends Component {
                             <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Header>
-                        <Drawer title="Menu" style={{background: 'fff', color: 'black', fontSize: 'bold'}}>
-                        <Navigation className="left-title" style={{color: 'black'}}>
-                            <Link to="/" style={{color: 'black', fontSize: 'bold'}}>Home</Link>
-                            <Link to="/resume" style={{color: 'black', fontSize: 'bold'}}>Resume</Link>
-                            <Link to="/aboutme" style={{color: 'black', fontSize: 'bold'}}>About Me</Link>
-                            <Link to="/projects" style={{color: 'black', fontSize: 'bold'}}>Projects</Link>
-                            <Link to="/contact" style={{color: 'black', fontSize: 'bold'}}>Contact</Link>
+                        <Drawer title="Menu"  className="leftMenuStyle">
+                        <Navigation className="left-title" style={{color: 'fff'}}>
+                            <Link to="/" style={stylesLinkLeft}>Home</Link>
+                            <Link to="/resume" style={stylesLinkLeft}>Resume</Link>
+                            <Link to="/aboutme" style={stylesLinkLeft}>About Me</Link>
+                            <Link to="/projects" style={stylesLinkLeft}>Projects</Link>
+                            <Link to="/contact" style={stylesLinkLeft}>Contact</Link>
                         </Navigation>
                     </Drawer>
                     <Content>
