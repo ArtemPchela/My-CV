@@ -3,7 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 //import { Pic } from "pic";
 //import img from './me.jpg';
 //const face = require('./images/me.jpg');
-import PDF from "../CV/CV_Artem Pchelenkov.pdf";
+
 
 
 
@@ -29,23 +29,15 @@ class Landingpage extends Component {
                                 </a>
 
                                 {/*Freecodecamp*/}
-                                <a href="#top"  rel="noopener noreferrer" target="_blank"  >
-                                    <i className="fa fa-free-code-camp" aria-hidden="true" />
-                                </a>
+                                {/*<a href="#top"  rel="noopener noreferrer" target="_blank"  >*/}
+                                {/*    <i className="fa fa-free-code-camp" aria-hidden="true" />*/}
+                                {/*</a>*/}
 
                                 {/*/!*Sololearn*!/*/}
                                 {/*<a href=""  rel="noopener noreferrer" target="_blank"  >*/}
                                 {/*    <i className="fa fa-solo-learn" aria-hidden="true" />*/}
                                 {/*</a>*/}
                             </div>}
-                            <div className='downloadCV'>
-                                <a href={PDF} download>
-                                    <button type='button' className='button'>
-                                        <i className="fa fa-download" />
-                                        Download CV
-                                    </button>
-                                </a>
-                            </div>
                         </div>
                     </Cell>
                 </Grid>
