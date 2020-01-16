@@ -3,6 +3,7 @@ import { Grid, Cell} from "react-mdl";
 import Expiriens from "./expiriens";
 import Skills from "./skills";
 import Education from "./education";
+import PDF from "../CV/CV_Artem Pchelenkov.pdf";
 const junior2 = require('./images/junior2.jpg');
 
 class Resume extends Component {
@@ -25,7 +26,14 @@ class Resume extends Component {
                            }}><b>Junior Front-end Developer</b></h2>
                            <hr style={{borderTop: "3px solid #833fb2", width: '100%'}}/>
                        </div>
-                       <p></p>
+                       <div className='downloadCV'>
+                           <a href={PDF} download>
+                               <button type='button' className='button'>
+                                   <i className="fa fa-download" />
+                                   Download resume
+                               </button>
+                           </a>
+                       </div>
                    </Cell>
                    <Cell col={8} className="resume-right-col">
                        <h2>Skills</h2>
@@ -50,11 +58,11 @@ class Resume extends Component {
                            startYear1={"2018"}
                            endYear1={"2019"}
 
-                           startYear2={"2009"}
-                           endYearFirst2={"2014"}
-
                            startYear3={"2017"}
                            endYear3={"2018"}
+
+                           startYear2={"2009"}
+                           endYear2={"2014"}
                        />
                    </Cell>
                </Grid>
