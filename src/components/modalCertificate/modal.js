@@ -2,10 +2,11 @@ import React from 'react';
 import './modal.css';
 import Certificate from './certificate.jpg';
 
+
 const butOpen = {
     marginBottom: '5px',
-    padding: '5px',
-    background: 'white',
+    padding: '9px 25px',
+    background: '#bdbdbd',
     borderRadius: '8px',
     outline: 'none',
     display: 'flex',
