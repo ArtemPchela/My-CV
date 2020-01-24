@@ -239,21 +239,23 @@ a {
 /*Download button*/
 
 .button {
-    margin: 1em 2em 0 4em;
+    margin: 1em 2em 0 3em;
     border: none;
     border-radius: 8px;
     display: inline-block;
     cursor: pointer;
     color: black;
+    background-color: #bdbdbd;
     font-size: 20px;
     font-weight: bold;
     padding: 13px 29px;
     text-decoration: none;
 }
 
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 1125px) and (min-width: 300px) {
      .button  {
         border: none;
+        margin: 1em 1em 0 4em;
         border-radius: 8px;
         display: inline-block;
         cursor: pointer;
@@ -296,37 +298,7 @@ Link:hover {
     }
 }
 
-@media (max-width: 479px) {
-    .mdl-grid {
-        padding: 8px;
-        margin-top: 2em;
-    }
+.mdl-grid {
+    margin-top: 2em;
 }
 
-@media (min-width: 840px) {
-    .mdl-grid {
-        padding: 8px;
-        margin-top: 3em;
-    }
-}
-
-@media (min-width: 600px) {
-    .mdl-grid {
-        padding: 8px;
-        margin-top: 3em;
-    }
-}
-
-@media (min-width: 992px) {
-    .mdl-grid {
-        padding: 8px;
-        margin-top: 3em;
-    }
-}
-
-/*@media (max-width: 250px) {*/
-/*    .mdl-grid {*/
-/*        padding: 8px;*/
-/*        margin-top: 3em;*/
-/*    }*/
-/*}*/
