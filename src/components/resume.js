@@ -12,7 +12,7 @@ class Resume extends Component {
             <div>
                <Grid>
                    <Cell col={4}>
-                       <div style={{textAlign: "center"}}>
+                       <div style={{textAlign: "center", marginTop: "2em"}}>
                            <img
                                src={junior2}
                                alt="avatar"
